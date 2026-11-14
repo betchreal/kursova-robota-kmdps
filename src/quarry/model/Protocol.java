@@ -26,7 +26,7 @@ public class Protocol {
             return;
         }
 
-        StringBuilder header = new StringBuilder(String.format("%8s  %-12s %4s", "t, хв", "Подія", "Ваг."));
+        StringBuilder header = new StringBuilder(String.format("%8s  %-12s %4s", "t, хв", "Подія", "Вант."));
         for (QueueingSystem system : this.network) {
             header.append(String.format("  %-13s", system.getName()));
         }
